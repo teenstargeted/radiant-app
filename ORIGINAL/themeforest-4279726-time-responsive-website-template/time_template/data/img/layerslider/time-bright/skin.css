@@ -1,0 +1,143 @@
+/**
+ * @package Time_Template
+ * @since Time 1.0
+ */
+ 
+/* Background
+----------------------------------------------------------------------------- */
+.ls-time-bright .ls-nav-prev,
+.ls-time-bright .ls-nav-next,
+.ls-time-bright .ls-nav-start,
+.ls-time-bright .ls-nav-stop,
+.ls-time-bright .ls-bottom-slidebuttons a,
+.ls-time-bright .ls-playvideo {
+	background-image: url(skin.png);	
+	background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.ls-time-bright .ls-nav-prev,
+	.ls-time-bright .ls-nav-next,
+	.ls-time-bright .ls-nav-start,
+	.ls-time-bright .ls-nav-stop,
+	.ls-time-bright .ls-bottom-slidebuttons a,
+	.ls-time-bright .ls-playvideo {
+		background-image: url(skin@2x.png);
+		background-size: 86px 242px;
+	}
+}
+
+/* Previous, next
+----------------------------------------------------------------------------- */
+.ls-time-bright .ls-nav-prev,
+.ls-time-bright .ls-nav-next {
+	position: absolute;
+	margin: -33px 10px 0 10px;	
+	top: 50%;
+	width: 43px;
+	height: 66px;
+	z-index: 10000;
+}
+.ls-time-bright .ls-nav-prev {
+	background-position: 0 0;
+	left: -63px;
+}
+.ls-time-bright .ls-nav-prev:hover {
+	background-position: 0 -66px;
+}
+.ls-time-bright .ls-nav-next {
+	background-position: -43px 0;
+	right: -63px;
+}
+.ls-time-bright .ls-nav-next:hover {
+	background-position: -43px -66px;
+}
+
+/* Start, stop
+----------------------------------------------------------------------------- */
+.ls-time-bright .ls-nav-start,
+.ls-time-bright .ls-nav-stop {
+	display: inline-block;
+	top: -30px;
+	width: 25px;
+	height: 20px;
+}
+.ls-time-bright .ls-nav-start {
+	background-position: 0 -152px;
+}
+.ls-time-bright .ls-nav-start:hover,
+.ls-time-bright .ls-nav-start-active {
+	background-position: 0 -172px;
+}
+.ls-time-bright .ls-nav-stop {
+	background-position: -25px -152px;
+}
+.ls-time-bright .ls-nav-stop:hover,
+.ls-time-bright .ls-nav-stop-active {
+	background-position: -25px -172px;
+}
+
+/* Sides
+----------------------------------------------------------------------------- */
+.ls-time-bright .ls-nav-sides {
+	display: none;
+}
+
+/* Slide buttons
+----------------------------------------------------------------------------- */
+.ls-time-bright .ls-bottom-slidebuttons,
+.ls-time-bright .ls-bottom-slidebuttons a {
+	display: inline-block;
+	height: 20px;
+}
+.ls-time-bright .ls-bottom-slidebuttons {
+	top: -30px;
+}
+.ls-time-bright .ls-bottom-slidebuttons a {
+	background-position: 0 -132px;
+	width: 25px;
+}
+.ls-time-bright .ls-bottom-slidebuttons a.ls-nav-active,
+.ls-time-bright .ls-bottom-slidebuttons a:hover {
+	background-position: -25px -132px;
+}
+
+/* Thumbnail
+----------------------------------------------------------------------------- */
+.ls-time-bright .ls-thumbnail-hover {
+	bottom: 30px;
+	padding: 2px;
+	margin-left: -3px;
+}
+.ls-time-bright .ls-thumbnail-hover-bg,
+.ls-time-bright .ls-nothumb {
+	background: #fff;
+}
+.ls-time-bright .ls-thumbnail-hover span {
+	border: 5px solid #fff;
+	margin-left: -5px;
+}
+.ls-time-bright .ls-thumbnail {
+	top: 10px;
+}
+.ls-time-bright .ls-thumbnail-inner {
+	padding: 2px;
+	margin-left: -2px;
+	background: #fff;
+}
+.ls-time-bright .ls-thumbnail-slide a {
+	margin-right: 2px;
+}
+
+/* Play video
+----------------------------------------------------------------------------- */
+.ls-time-bright .ls-playvideo {
+	background-position: 0 -192px;
+	margin-left: -19px;
+	margin-top: -22px;
+	width: 38px;
+	height: 44px;
+}
+.ls-time-bright .ls-playvideo:hover,
+.ls-time-bright .ls-vpcontainer:hover .ls-playvideo {
+	background-position: -38px -192px;
+}

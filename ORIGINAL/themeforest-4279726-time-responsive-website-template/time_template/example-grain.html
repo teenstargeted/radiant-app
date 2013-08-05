@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>             <html class="no-js ie lt-ie9" lang="en-US"><![endif]-->
+<!--[if IE 9]>                <html class="no-js ie ie9" lang="en-US">   <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js no-ie" lang="en-US">    <!--<![endif]-->
+
+	<!-- Head section -->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+		<meta name="description" content="Responsive website template by kubasto" />
+		
+		<link rel="stylesheet" href="data/css/fancybox.min.css" />
+		<link rel="stylesheet" href="data/css/layerslider.min.css" />
+		<link rel="stylesheet" href="data/css/mejs.min.css" />
+		
+		<link rel="stylesheet" href="data/css/style.min.css" />
+		<link rel="stylesheet" href="data/css/bright.min.css" />
+		<link rel="stylesheet" href="data/css/color-violet.css" />
+		<link rel="stylesheet" href="data/css/mobile.min.css" media="only screen and (max-width: 767px)" />
+		
+		<link rel="shortcut icon" href="data/img/favicon.ico" />
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script type="text/javascript" src="data/js/selectivizr.min.js"></script>
+		<![endif]-->
+		<style>
+			@font-face {
+				font-family: 'Novecentowide';
+				src: url('content/fonts/novecentowide-bold-webfont.eot');
+				src: url('content/fonts/novecentowide-bold-webfont.eot?#iefix') format('embedded-opentype'), url('content/fonts/novecentowide-bold-webfont.woff') format('woff'), url('content/fonts/novecentowide-bold-webfont.ttf') format('truetype'), url('content/fonts/novecentowide-bold-webfont.svg#NovecentowideBold') format('svg');
+				font-weight: bold;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'Novecentowide';
+				src: url('content/fonts/novecentowide-book-webfont.eot');
+				src: url('content/fonts/novecentowide-book-webfont.eot?#iefix') format('embedded-opentype'), url('content/fonts/novecentowide-book-webfont.woff') format('woff'), url('content/fonts/novecentowide-book-webfont.ttf') format('truetype'), url('content/fonts/novecentowide-book-webfont.svg#NovecentowideBook') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'NovecentowideDemiBold';
+				src: url('content/fonts/novecentowide-demibold-webfont.eot');
+				src: url('content/fonts/novecentowide-demibold-webfont.eot?#iefix') format('embedded-opentype'), url('content/fonts/novecentowide-demibold-webfont.woff') format('woff'), url('content/fonts/novecentowide-demibold-webfont.ttf') format('truetype'), url('content/fonts/novecentowide-demibold-webfont.svg#NovecentowideDemiBold') format('svg');
+				font-weight: bold;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'NovecentowideLight';
+				src: url('content/fonts/novecentowide-light-webfont.eot');
+				src: url('content/fonts/novecentowide-light-webfont.eot?#iefix') format('embedded-opentype'), url('content/fonts/novecentowide-light-webfont.woff') format('woff'), url('content/fonts/novecentowide-light-webfont.ttf') format('truetype'), url('content/fonts/novecentowide-light-webfont.svg#NovecentowideLight') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'NovecentowideMedium';
+				src: url('content/fonts/novecentowide-medium-webfont.eot');
+				src: url('content/fonts/novecentowide-medium-webfont.eot?#iefix') format('embedded-opentype'), url('content/fonts/novecentowide-medium-webfont.woff') format('woff'), url('content/fonts/novecentowide-medium-webfont.ttf') format('truetype'), url('content/fonts/novecentowide-medium-webfont.svg#NovecentowideMedium') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'NovecentowideNormal';
+				src: url('content/fonts/novecentowide-normal-webfont.eot');
+				src: url('content/fonts/novecentowide-normal-webfont.eot?#iefix') format('embedded-opentype'), url('content/fonts/novecentowide-normal-webfont.woff') format('woff'), url('content/fonts/novecentowide-normal-webfont.ttf') format('truetype'), url('content/fonts/novecentowide-normal-webfont.svg#NovecentowideNormal') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+			.novecentowide {
+				font: bold 28px/1em Novecentowide;
+				letter-spacing: -1px;
+			}
+			.layout-boxed .outer-container, .container {
+				max-width: 1024px;
+			}
+			#big-message h2 {
+				font: normal 83px/1em NovecentowideLight, serif;
+				letter-spacing: -1px;
+				margin: 0;
+			}
+			#big-message h2.mobile-only {
+				font-size: 46px;
+			}
+		</style>
+		<title>Example layout - Time Template</title>
+	</head>
+	<!-- // Head section -->
+
+	<!-- Body section -->
+	<body class="layout-open">
+
+		<div id="top" class="no-bar">
+
+			<div id="backgrounds">
+				<div class="stripes" style="background-image: url(content/bg/grain.jpg); background-attachment: scroll; background-size: auto; background-position: center 76px; background-repeat: repeat-x;" data-bg-2x="content/bg/grain@2x.jpg"></div>
+			</div>
+
+			<div class="outer-container">
+
+				<!-- Mobile navigation -->
+				<nav class="mobile">
+					<ul>
+						<li>
+							<a href="#">Features</a>
+							<ul>
+								<li><a href="sliders.html">Sliders</a></li>
+								<li><a href="typography.html">Styles and typography</a></li>
+								<li><a href="layouts.html">Layouts</a></li>
+								<li><a href="sizes.html">Sizes</a></li>
+								<li><a href="backgrounds.html">Backgrounds</a></li>
+								<li><a href="menus.html">Menus</a></li>
+								<li><a href="portfolios.html">Portfolios</a></li>
+								<li><a href="video-and-audio.html">Video &amp; audio</a></li>
+								<li><a href="galleries.html">Galleries</a></li>
+								<li><a href="sidebars.html">Sidebars</a></li>
+								<li><a href="color-schemes.html">Color schemes</a></li>
+								<li><a href="fonts.html">Fonts</a></li>
+								<li><a href="icons.html">Icons</a></li>
+								<li><a href="social-media.html">Social media</a></li>
+								<li><a href="price-tables.html">Price tables</a></li>
+								<li><a href="login-form.html">Log in form</a></li>
+								<li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+								<li><a href="responsive.html">Responsive</a></li>
+								<li><a href="retina.html">Retina ready</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="example-layouts.html">Examples</a>
+							<ul>
+								<li>
+									<a href="#">Frontpages</a>
+									<ul>
+										<li><a href="index.html">Frontpage 1</a></li>
+										<li><a href="index-2.html">Frontpage 2</a></li>
+										<li><a href="index-3.html">Frontpage 3</a></li>
+										<li><a href="index-4.html">Frontpage 4</a></li>
+										<li><a href="index-5.html">Frontpage 5</a></li>
+										<li><a href="index-6.html">Frontpage 6</a></li>
+										<li><a href="index-7.html">Frontpage 7</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Galleries</a>
+									<ul>
+										<li><a href="gallery-micro.html">Micro</a></li>
+										<li><a href="gallery-tiny.html">Tiny</a></li>
+										<li><a href="gallery-small.html">Small</a></li>
+										<li><a href="gallery-medium.html">Medium</a></li>
+										<li><a href="gallery-big.html">Big</a></li>
+										<li><a href="gallery-full-screen.html">Full screen</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Portfolios</a>
+									<ul>
+										<li>
+											<a href="portfolio-big-1.html">1 column</a>
+											<ul>
+												<li><a href="portfolio-big-1.html">Example 1</a></li>
+												<li><a href="portfolio-big-2a.html">Example 2</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="portfolio-big-plus-1.html">1 column +</a>
+											<ul>
+												<li><a href="portfolio-big-plus-1.html">Example 1</a></li>
+												<li><a href="portfolio-big-plus-2a.html">Example 2</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="portfolio-medium-1.html">2 columns</a>
+											<ul>
+												<li><a href="portfolio-medium-1.html">Example 1</a></li>
+												<li><a href="portfolio-medium-2a.html">Example 2</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="portfolio-small-1.html">3 columns</a>
+											<ul>
+												<li><a href="portfolio-small-1.html">Example 1</a></li>
+												<li><a href="portfolio-small-2a.html">Example 2</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="portfolio-tiny-1.html">4 columns</a>
+											<ul>
+												<li><a href="portfolio-tiny-1.html">Example 1</a></li>
+												<li><a href="portfolio-tiny-2.html">Example 2</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="portfolio-sidebar-1.html">With sidebar</a>
+											<ul>
+												<li><a href="portfolio-sidebar-1.html">Example 1</a></li>
+												<li><a href="portfolio-sidebar-2.html">Example 2</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Portfolio items</a>
+											<ul>
+												<li><a href="portfolio-item-1.html">Example 1</a></li>
+												<li><a href="portfolio-item-2.html">Example 2</a></li>
+												<li><a href="portfolio-item-3.html">Example 3</a></li>
+												<li><a href="portfolio-item-4.html">Example 4</a></li>
+												<li><a href="portfolio-item-5.html">Example 5</a></li>
+												<li><a href="portfolio-item-6.html">Example 6</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Regular pages</a>
+									<ul>
+										<li><a href="page-full-width.html">Full width</a></li>
+										<li><a href="page-right-sidebar.html">Right sidebar</a></li>
+										<li><a href="page-left-sidebar.html">Left sidebar</a></li>
+										<li><a href="page-two-right-sidebars.html">2 right sidebars</a></li>
+										<li><a href="page-two-left-sidebars.html">2 left sidebars</a></li>
+										<li><a href="page-two-sidebars.html">2 sidebars</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Blogs</a>
+									<ul>
+										<li><a href="blog-right-sidebar.html">Right sidebar</a></li>
+										<li><a href="blog-left-sidebar.html">Left sidebar</a></li>
+										<li><a href="blog-two-sidebars.html">2 sidebars</a></li>
+										<li><a href="blog-two-right-sidebars.html">2 right sidebars</a></li>
+										<li><a href="blog-two-left-sidebars.html">2 left sidebars</a></li>
+										<li><a href="blog-no-sidebars.html">No sidebars</a></li>
+										<li>
+											<a href="#">Posts</a>
+											<ul>
+												<li><a href="post-1.html">Example post 1</a></li>
+												<li><a href="post-2.html">Example post 2</a></li>
+												<li><a href="post-3.html">Example post 3</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Menus</a>
+									<ul>
+										<li><a href="menu-icons.html">Icons in menus</a></li>
+										<li><a href="menu-lang-mini.html">2-3 languages</a></li>
+										<li><a href="menu-lang.html">Many languages</a></li>
+										<li><a href="menu-upper-secondary.html">Upper secondary menu</a></li>
+										<li><a href="menu-lower-secondary.html">Lower secondary menu</a></li>
+										<li><a href="menu-aside.html">Sidebar menu</a></li>
+										<li><a href="menu-bottom.html">Footer menu</a></li>
+										<li><a href="menu-primary.html">Header menu</a></li>
+										<li><a href="menu-login-form.html">User log in</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Site sizes</a>
+									<ul>
+										<li><a href="size-full-hd.html">Full HD</a></li>
+										<li><a href="size-wide.html">Wide</a></li>
+										<li><a href="size-standard.html">Standard</a></li>
+										<li><a href="size-narrow.html">Narrow</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Color schemes</a>
+									<ul>
+										<li><a href="color-bright-blue.html">Bright+blue</a></li>
+										<li><a href="color-bright-green.html">Bright+green</a></li>
+										<li><a href="color-bright-red.html">Bright+red</a></li>
+										<li><a href="color-dark-blue.html">Dark+blue</a></li>
+										<li><a href="color-dark-green.html">Dark+green</a></li>
+										<li><a href="color-dark-red.html">Dark+red</a></li>
+									</ul>
+								</li>
+								<li><a href="faq.html">FAQ page</a></li>
+								<li><a href="contact.html">Contact page</a></li>
+								<li><a href="about.html">About / Team</a></li>
+								<li><a href="404.html">404 page</a></li>
+								<li><a href="search.html">Search results</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="blog-right-sidebar.html">Blog</a>
+							<ul>
+								<li><a href="blog-right-sidebar.html">Right sidebar</a></li>
+								<li><a href="blog-left-sidebar.html">Left sidebar</a></li>
+								<li><a href="blog-two-sidebars.html">2 sidebars</a></li>
+								<li><a href="blog-two-right-sidebars.html">2 right sidebars</a></li>
+								<li><a href="blog-two-left-sidebars.html">2 left sidebars</a></li>
+								<li><a href="blog-no-sidebars.html">No sidebars</a></li>
+								<li>
+									<a href="#">Posts</a>
+									<ul>
+										<li><a href="post-1.html">Example post 1</a></li>
+										<li><a href="post-2.html">Example post 2</a></li>
+										<li><a href="post-3.html">Example post 3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+						<li class="lang">
+							<a href="#_"><img src="data/img/icons/flags/gb.png" data-2x="data/img/icons/flags/gb@2x.png" width="16" height="16" alt="" />English</a>
+							<ul>
+								<li><a href="#_"><img src="data/img/icons/flags/es.png" data-2x="data/img/icons/flags/es@2x.png" width="16" height="16" alt="" />Español</a></li>
+								<li><a href="#_"><img src="data/img/icons/flags/de.png" data-2x="data/img/icons/flags/de@2x.png" width="16" height="16" alt="" />Deutsch</a></li>
+								<li><a href="#_"><img src="data/img/icons/flags/fr.png" data-2x="data/img/icons/flags/fr@2x.png" width="16" height="16" alt="" />Français</a></li>
+								<li><a href="#_"><img src="data/img/icons/flags/ru.png" data-2x="data/img/icons/flags/ru@2x.png" width="16" height="16" alt="" />Pусский</a></li>
+								<li><a href="#_"><img src="data/img/icons/flags/gr.png" data-2x="data/img/icons/flags/gr@2x.png" width="16" height="16" alt="" />Ελληνικά</a></li>
+								<li><a href="#_"><img src="data/img/icons/flags/cn.png" data-2x="data/img/icons/flags/cn@2x.png" width="16" height="16" alt="" />中国的</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<!-- // Mobile navigation -->
+
+			</div><!-- // .outer-container -->
+
+			<div class="outer-container upper">
+
+				<!-- Header -->
+				<header class="header">
+
+					<div class="container">
+
+						<!-- Mobile helper -->
+						<div class="mobile-helper vertical-align">
+							<a class="button" title="Menu"><i class="icon-menu"></i></a>
+						</div>
+						<!-- // Mobile helper -->
+
+						<!-- Logo -->
+						<h1 class="logo vertical-align" title="Time Template">
+							<a href="index.html"><img src="content/logo-bright-violet.png" data-2x="content/logo-bright-violet@2x.png" width="180" height="36" alt="Time Template" /></a>
+						</h1>
+						<!-- // Logo -->
+
+						<!-- Primary navigation -->
+						<nav class="primary vertical-align">
+							<ul>
+								<li>
+									<a href="#">Features</a>
+									<ul>
+										<li><a href="sliders.html">Sliders</a></li>
+										<li><a href="typography.html">Styles and typography</a></li>
+										<li><a href="layouts.html">Layouts</a></li>
+										<li><a href="sizes.html">Sizes</a></li>
+										<li><a href="backgrounds.html">Backgrounds</a></li>
+										<li><a href="menus.html">Menus</a></li>
+										<li><a href="portfolios.html">Portfolios</a></li>
+										<li><a href="video-and-audio.html">Video &amp; audio</a></li>
+										<li><a href="galleries.html">Galleries</a></li>
+										<li><a href="sidebars.html">Sidebars</a></li>
+										<li><a href="color-schemes.html">Color schemes</a></li>
+										<li><a href="fonts.html">Fonts</a></li>
+										<li><a href="icons.html">Icons</a></li>
+										<li><a href="social-media.html">Social media</a></li>
+										<li><a href="price-tables.html">Price tables</a></li>
+										<li><a href="login-form.html">Log in form</a></li>
+										<li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+										<li><a href="responsive.html">Responsive</a></li>
+										<li><a href="retina.html">Retina ready</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="example-layouts.html">Examples</a>
+									<ul>
+										<li>
+											<a href="#">Frontpages</a>
+											<ul>
+												<li><a href="index.html">Frontpage 1</a></li>
+												<li><a href="index-2.html">Frontpage 2</a></li>
+												<li><a href="index-3.html">Frontpage 3</a></li>
+												<li><a href="index-4.html">Frontpage 4</a></li>
+												<li><a href="index-5.html">Frontpage 5</a></li>
+												<li><a href="index-6.html">Frontpage 6</a></li>
+												<li><a href="index-7.html">Frontpage 7</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Galleries</a>
+											<ul>
+												<li><a href="gallery-micro.html">Micro</a></li>
+												<li><a href="gallery-tiny.html">Tiny</a></li>
+												<li><a href="gallery-small.html">Small</a></li>
+												<li><a href="gallery-medium.html">Medium</a></li>
+												<li><a href="gallery-big.html">Big</a></li>
+												<li><a href="gallery-full-screen.html">Full screen</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Portfolios</a>
+											<ul>
+												<li>
+													<a href="portfolio-big-1.html">1 column</a>
+													<ul>
+														<li><a href="portfolio-big-1.html">Example 1</a></li>
+														<li><a href="portfolio-big-2a.html">Example 2</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="portfolio-big-plus-1.html">1 column +</a>
+													<ul>
+														<li><a href="portfolio-big-plus-1.html">Example 1</a></li>
+														<li><a href="portfolio-big-plus-2a.html">Example 2</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="portfolio-medium-1.html">2 columns</a>
+													<ul>
+														<li><a href="portfolio-medium-1.html">Example 1</a></li>
+														<li><a href="portfolio-medium-2a.html">Example 2</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="portfolio-small-1.html">3 columns</a>
+													<ul>
+														<li><a href="portfolio-small-1.html">Example 1</a></li>
+														<li><a href="portfolio-small-2a.html">Example 2</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="portfolio-tiny-1.html">4 columns</a>
+													<ul>
+														<li><a href="portfolio-tiny-1.html">Example 1</a></li>
+														<li><a href="portfolio-tiny-2.html">Example 2</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="portfolio-sidebar-1.html">With sidebar</a>
+													<ul>
+														<li><a href="portfolio-sidebar-1.html">Example 1</a></li>
+														<li><a href="portfolio-sidebar-2.html">Example 2</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Portfolio items</a>
+													<ul>
+														<li><a href="portfolio-item-1.html">Example 1</a></li>
+														<li><a href="portfolio-item-2.html">Example 2</a></li>
+														<li><a href="portfolio-item-3.html">Example 3</a></li>
+														<li><a href="portfolio-item-4.html">Example 4</a></li>
+														<li><a href="portfolio-item-5.html">Example 5</a></li>
+														<li><a href="portfolio-item-6.html">Example 6</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Regular pages</a>
+											<ul>
+												<li><a href="page-full-width.html">Full width</a></li>
+												<li><a href="page-right-sidebar.html">Right sidebar</a></li>
+												<li><a href="page-left-sidebar.html">Left sidebar</a></li>
+												<li><a href="page-two-right-sidebars.html">2 right sidebars</a></li>
+												<li><a href="page-two-left-sidebars.html">2 left sidebars</a></li>
+												<li><a href="page-two-sidebars.html">2 sidebars</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Blogs</a>
+											<ul>
+												<li><a href="blog-right-sidebar.html">Right sidebar</a></li>
+												<li><a href="blog-left-sidebar.html">Left sidebar</a></li>
+												<li><a href="blog-two-sidebars.html">2 sidebars</a></li>
+												<li><a href="blog-two-right-sidebars.html">2 right sidebars</a></li>
+												<li><a href="blog-two-left-sidebars.html">2 left sidebars</a></li>
+												<li><a href="blog-no-sidebars.html">No sidebars</a></li>
+												<li>
+													<a href="#">Posts</a>
+													<ul>
+														<li><a href="post-1.html">Example post 1</a></li>
+														<li><a href="post-2.html">Example post 2</a></li>
+														<li><a href="post-3.html">Example post 3</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Menus</a>
+											<ul>
+												<li><a href="menu-icons.html">Icons in menus</a></li>
+												<li><a href="menu-lang-mini.html">2-3 languages</a></li>
+												<li><a href="menu-lang.html">Many languages</a></li>
+												<li><a href="menu-upper-secondary.html">Upper secondary menu</a></li>
+												<li><a href="menu-lower-secondary.html">Lower secondary menu</a></li>
+												<li><a href="menu-aside.html">Sidebar menu</a></li>
+												<li><a href="menu-bottom.html">Footer menu</a></li>
+												<li><a href="menu-primary.html">Header menu</a></li>
+												<li><a href="menu-login-form.html">User log in</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Site sizes</a>
+											<ul>
+												<li><a href="size-full-hd.html">Full HD</a></li>
+												<li><a href="size-wide.html">Wide</a></li>
+												<li><a href="size-standard.html">Standard</a></li>
+												<li><a href="size-narrow.html">Narrow</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Color schemes</a>
+											<ul>
+												<li><a href="color-bright-blue.html">Bright+blue</a></li>
+												<li><a href="color-bright-green.html">Bright+green</a></li>
+												<li><a href="color-bright-red.html">Bright+red</a></li>
+												<li><a href="color-dark-blue.html">Dark+blue</a></li>
+												<li><a href="color-dark-green.html">Dark+green</a></li>
+												<li><a href="color-dark-red.html">Dark+red</a></li>
+											</ul>
+										</li>
+										<li><a href="faq.html">FAQ page</a></li>
+										<li><a href="contact.html">Contact page</a></li>
+										<li><a href="about.html">About / Team</a></li>
+										<li><a href="404.html">404 page</a></li>
+										<li><a href="search.html">Search results</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="blog-right-sidebar.html">Blog</a>
+									<ul>
+										<li><a href="blog-right-sidebar.html">Right sidebar</a></li>
+										<li><a href="blog-left-sidebar.html">Left sidebar</a></li>
+										<li><a href="blog-two-sidebars.html">2 sidebars</a></li>
+										<li><a href="blog-two-right-sidebars.html">2 right sidebars</a></li>
+										<li><a href="blog-two-left-sidebars.html">2 left sidebars</a></li>
+										<li><a href="blog-no-sidebars.html">No sidebars</a></li>
+										<li>
+											<a href="#">Posts</a>
+											<ul>
+												<li><a href="post-1.html">Example post 1</a></li>
+												<li><a href="post-2.html">Example post 2</a></li>
+												<li><a href="post-3.html">Example post 3</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="contact.html">Contact</a></li>
+								<li class="lang">
+									<a href="#_"><img src="data/img/icons/flags/gb.png" data-2x="data/img/icons/flags/gb@2x.png" width="16" height="16" alt="" />English</a>
+									<ul>
+										<li><a href="#_"><img src="data/img/icons/flags/es.png" data-2x="data/img/icons/flags/es@2x.png" width="16" height="16" alt="" />Español</a></li>
+										<li><a href="#_"><img src="data/img/icons/flags/de.png" data-2x="data/img/icons/flags/de@2x.png" width="16" height="16" alt="" />Deutsch</a></li>
+										<li><a href="#_"><img src="data/img/icons/flags/fr.png" data-2x="data/img/icons/flags/fr@2x.png" width="16" height="16" alt="" />Français</a></li>
+										<li><a href="#_"><img src="data/img/icons/flags/ru.png" data-2x="data/img/icons/flags/ru@2x.png" width="16" height="16" alt="" />Pусский</a></li>
+										<li><a href="#_"><img src="data/img/icons/flags/gr.png" data-2x="data/img/icons/flags/gr@2x.png" width="16" height="16" alt="" />Ελληνικά</a></li>
+										<li><a href="#_"><img src="data/img/icons/flags/cn.png" data-2x="data/img/icons/flags/cn@2x.png" width="16" height="16" alt="" />中国的</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<!-- // Primary navigation -->
+
+					</div><!-- // .container -->
+
+				</header>
+				<!-- // Header -->
+
+			</div><!-- // .outer-container -->
+
+			<div style="height: 160px;"></div>
+
+			<div class="outer-container transparent">
+
+				<div class="headline">
+
+					<div class="container">
+
+						<div class="section">
+ 							<ul class="breadcrumbs alt">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="example-layouts.html">Example layouts</a></li>
+								<li>"Grain"</li>
+							</ul>
+							<h1>Your page title</h1>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div><!-- // .outer-container -->
+
+			<div class="outer-container">
+
+				<!-- Content -->
+				<div class="content">
+
+					<div class="container">
+
+						<div class="main">
+
+							<section class="section">
+
+								<div class="columns">
+									<ul>
+										<li class="col-1-4">
+
+											<figure>
+												<img src="content/misc/pasta.jpg" data-2x="content/misc/pasta@2x.jpg" width="206" height="168" alt="" />
+											</figure>
+
+										</li>
+										<li id="big-message" class="col-3-4">
+
+											<h2 class="desktop-only">Your very big message</h2>
+											<h2 class="mobile-only">Your very big message</h2>
+
+										</li>
+									</ul>
+								</div><!-- // .columns -->
+
+								<hr />
+
+								<div class="columns">
+									<ul>
+										<li class="col-1-4">
+
+											<h2><a href="#_">Cras dapibus</a></h2>
+											<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulput. <a href="#_" class="readmore">Read more&nbsp;&rsaquo;</a></p>
+
+										</li>
+										<li class="col-1-4">
+
+											<h2><a href="#_">Etiam orcis</a></h2>
+											<p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mia libero. <a href="#_" class="readmore">Read more&nbsp;&rsaquo;</a></p>
+
+										</li>
+										<li class="col-1-4">
+
+											<h2><a href="#_">Aliquam lorem</a></h2>
+											<p>Sed fringilla mauris. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Duis leo. Sed fringilla mauris sit amet nibh. <a href="#_" class="readmore">Read more&nbsp;&rsaquo;</a></p>
+
+										</li>
+										<li class="col-1-4">
+
+											<h2><a href="#_">Curabitur ipsum</a></h2>
+											<p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. <a href="#_" class="readmore">Read more&nbsp;&rsaquo;</a></p>
+
+										</li>
+									</ul>
+								</div><!-- // .columns -->
+
+								<hr />
+
+								<div class="movable-container">
+									<a href="#_" class="grayscale-hover">
+										<img src="content/logos/logo-1.png" data-2x="content/logos/logo-1@2x.png" width="137" height="59" alt="" />
+									</a>
+									<a href="#_" class="grayscale-hover">
+										<img src="content/logos/logo-2.png" data-2x="content/logos/logo-2@2x.png" width="144" height="59" alt="" />
+									</a>
+									<a href="#_" class="grayscale-hover">
+										<img src="content/logos/logo-3.png" data-2x="content/logos/logo-3@2x.png" width="109" height="59" alt="" />
+									</a>
+									<a href="#_" class="grayscale-hover">
+										<img src="content/logos/logo-4.png" data-2x="content/logos/logo-4@2x.png" width="138" height="59" alt="" />
+									</a>
+									<a href="#_" class="grayscale-hover">
+										<img src="content/logos/logo-5.png" data-2x="content/logos/logo-5@2x.png" width="128" height="59" alt="" />
+									</a>
+									<a href="#_" class="grayscale-hover">
+										<img src="content/logos/logo-6.png" data-2x="content/logos/logo-6@2x.png" width="81" height="59" alt="" />
+									</a>
+									<a href="#_" class="grayscale-hover">
+										<img src="content/logos/logo-7.png" data-2x="content/logos/logo-7@2x.png" width="143" height="59" alt="" />
+									</a>
+									<a href="#_" class="grayscale-hover">
+										<img src="content/logos/logo-8.png" data-2x="content/logos/logo-8@2x.png" width="133" height="59" alt="" />
+									</a>
+									<a href="#_" class="grayscale-hover">
+										<img src="content/logos/logo-9.png" data-2x="content/logos/logo-9@2x.png" width="72" height="59" alt="" />
+									</a>
+									<a href="#_" class="grayscale-hover">
+										<img src="content/logos/logo-10.png" data-2x="content/logos/logo-10@2x.png" width="126" height="59" alt="" />
+									</a>
+									<a href="#_" class="grayscale-hover">
+										<img src="content/logos/logo-11.png" data-2x="content/logos/logo-11@2x.png" width="127" height="59" alt="" />
+									</a>
+								</div>
+
+							</section>
+
+						</div><!-- // .main -->
+
+					</div><!-- // .container -->
+
+				</div>
+				<!-- // Content -->
+
+			</div><!-- // .outer-container -->
+
+		</div><!-- // #top -->
+
+		<div id="bottom">
+
+			<div class="outer-container"></div>
+
+			<!-- Footer -->
+			<footer class="footer">
+			
+				<div class="container">
+			
+					<div class="section">
+						<p class="small alpha">&copy; Copyright 2013<br />Time by <a href="http://themeforest.net/user/kubasto/?ref=kubasto">kubasto</a></p>
+						<p class="small beta"><a href="credits.html">Credits</a> for the demo content</p>
+					</div>
+			
+				</div>
+			
+			</footer>
+			<!-- // Footer -->
+
+		</div><!-- // #bottom -->
+
+		<!-- JavaScript -->
+		<script src="data/js/jquery.min.js"></script>
+		<script src="data/js/jquery.easing.min.js"></script>
+		<script src="data/js/jquery.fancybox.min.js"></script>
+		<script src="data/js/jquery.flexslider.min.js"></script>
+		<script src="data/js/time.min.js"></script>
+		<!-- // JavaScript -->
+
+	</body>
+	<!-- // Body section -->
+
+</html>

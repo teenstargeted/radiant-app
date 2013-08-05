@@ -1,0 +1,947 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>documentation_v8</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font: normal 12px/22px Arial, Helvetica, sans-serif;
+	color: #333;
+	margin: 0 auto;
+	padding: 30px 10px;
+	max-width: 960px;
+}
+h1 {
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: -1.5px;
+	margin-bottom: 25px;
+}
+h2 {
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1.2;
+	margin: 18px 0;
+}
+h3 {
+	font-size: 24px;
+	line-height: 1.2;
+	margin: 32px 0 18px;
+}
+h2 + h3 {
+	margin-top: 18px;
+}
+h4 {
+	font-size: 20px;
+	line-height: 1.2;
+	margin: 18px 0;
+}
+p {
+	margin: 18px 0;
+}
+a {
+	color: #0099ff;;
+	text-decoration: underline;
+}
+a:hover {
+	color: #ff6600;;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+ul, ol {
+	margin-left: 20px;
+}
+ul {
+	list-style: inside disc;
+}
+ol {
+	list-style: inside decimal;
+}
+hr {
+	border: none;
+	border-top: 1px dotted #868686;
+	margin: 18px 0;
+}
+pre {
+	border-left: 3px solid #eee;
+	background: #f6f6f6;
+	line-height: 20px;
+	margin: 18px 0;
+	padding: 5px 30px;
+	overflow: auto;
+}
+code {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background: #666;
+	color: #fff;
+	font-family: "Lucida Console", Monaco, monospace;
+	white-space: nowrap;
+	padding: 3px 3px 2px;
+}
+pre code {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background: none;
+	color: #333;
+	white-space: pre;
+	padding: 0;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 1px;
+	background: #eee;
+}
+th, td {
+	text-align: left;
+	padding: 4px 8px;
+}
+th {
+	background: #f6f6f6;
+	font-weight: bold;
+}
+td {
+	background: #fff;
+}
+</style>
+</head>
+<body>
+<h1>Time - template documentation</h1>
+<p>Version: 1.2<br />
+Created: 2 May 2013<br />
+Website: <a href="http://themeforest.net/item/time-responsive-website-template/4279726/">http://themeforest.net/item/time-responsive-website-template/4279726/</a><br />
+Demo: <a href="http://themes.kubasto.com/template/time/">http://themes.kubasto.com/template/time/</a></p>
+<hr />
+<h2>Table of contents</h2>
+<div id="toc"></div>
+<hr />
+<h2>Introduction</h2>
+<p><em>Time</em> is a responsive template, which means it adapts to the device on which it's presented. The template cares for your content so it looks great on all versions, but you can also decide to show part of a content on some versions only, and hide on others (read more about it <a href="http://www.w3.org/TR/css3-mediaqueries/">here</a>).</p>
+<p><em>Time</em> has a lot of features, and most of them can be explored by looking at it's code, but if you need a deeper insight, this is the detailed documentation prepared for you.<br />
+Thanks for buying, and enjoy :)</p>
+<hr />
+<h2>Structure</h2>
+<h3>Files list</h3>
+<table>
+	<tr>
+		<th>Folder/file name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>CACHE</code></td>
+		<td>Folder for cache files.</td>
+	</tr>
+	<tr>
+		<td><code>CONTENT</code></td>
+		<td>Folder containing example content.</td>
+	</tr>
+	<tr>
+		<td><code>DATA</code></td>
+		<td>Folder containing all additional resources used in the template.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS</code></td>
+		<td>Folder containing CSS files.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS/bright.css</code></td>
+		<td>Style sheet with the bright version.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS/bright.min.css</code></td>
+		<td>Minified version of the <code>bright.css</code> file.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS/dark.css</code></td>
+		<td>Style sheet with the dark version.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS/dark.min.css</code></td>
+		<td>Minified version of the <code>dark.css</code> file.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS/color-*.css</code></td>
+		<td>Style sheets with leading colors.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS/fancybox.min.css</code></td>
+		<td>Minified version of the FancyBox style sheet.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS/layerslider.min.css</code></td>
+		<td>Minified version of the LayerSlider style sheet.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS/mejs.min.css</code></td>
+		<td>Minified version of the MediaElement.js style sheet.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS/mobile.css</code></td>
+		<td>Mobile version style sheet.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS/mobile.min.css</code></td>
+		<td>Minified version of the <code>mobile.css</code> file.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS/style.css</code></td>
+		<td>Main style sheet.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/CSS/style.min.css</code></td>
+		<td>Minified version of the <code>style.css</code> file.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/IMG</code></td>
+		<td>Folder containing all graphic elements.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/JS</code></td>
+		<td>Folder containing JavaScript.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/JS/*.min.js</code></td>
+		<td>Minified version of JS used in plugins and extensions applied in the template.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/JS/time.js</code></td>
+		<td>Main JavaScript.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/JS/time.min.js</code></td>
+		<td>Minified version of the <code>time.js</code> file.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/MEJS</code></td>
+		<td>Folder with files of the MediaElement.js audio/video player.</td>
+	</tr>
+	<tr>
+		<td><code>DATA/PHP</code></td>
+		<td>Folder containing php files.</td>
+	</tr>
+	<tr>
+		<td><code>*.html</code></td>
+		<td>All files with the template pages.</td>
+	</tr>
+</table>
+<h3>Site structure</h3>
+<p>Time is responsive, and there are two thresholds - maximum size and mobile size. By default these values are:</p>
+<p><strong>980 px</strong> - above that value, site won't increase width even it there is more area in a browser's window.<br />
+<strong>768 px</strong> - below that value, site will present styles prepared for mobile version. </p>
+<p>Structure of the site by sections, id's and classes:</p>
+<h4>Boxed layout</h4>
+<p><img src="res/structure_boxed.png" /></p>
+<h4>Open layout</h4>
+<p><img src="res/structure_open.png" /></p>
+<hr />
+<h2>Configuration</h2>
+<h3>Template</h3>
+<p>Basic configuration of the Time template is selecting color scheme, specifying leading color and a few options kept in JavaScript, which defines how the template works.</p>
+<p>To use bright or dark version you need to call the appropriate css style sheet (in the <code>&lt;head&gt;</code> section). There are two files to choose from: <code>data/css/bright.css</code> and <code>data/css/dark.css</code>. For example:</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;data/css/bright.css&quot; /&gt;
+</code></pre>
+
+<p><code>data/css/color-red.css</code> defines leading color. If you want to modify it, replace all instances of  <code>#ef0000</code> to another color of your choice. </p>
+<p>If you want to change JS configuration, you need to declare <code>timeConfig</code> variable and place it - depending on your preference - in the <code>&lt;head&gt;</code> section of the website or in a separate file.</p>
+<p>Available parameters:</p>
+<table>
+	<tr>
+		<th>Parameter</th>
+		<th>Default value</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>templatePath</code></td>
+		<td><pre><code>'.'</code></pre></td>
+		<td>Sets the link to the template folder. In most cases the default value should work.</td>
+	</tr>
+	<tr>
+		<td><code>tableMobileColsThreshold</code></td>
+		<td><pre><code>3</code></pre></td>
+		<td>Sets the threshold for the number of columns in a table from which on the mobile version there is a horizontal view.</td>
+	</tr>
+	<tr>
+		<td><code>columnsMobileColsThreshold</code></td>
+		<td><pre><code>3</code></pre></td>
+		<td>Sets the threshold for the number of columns (<code>.columns</code> element) from which on the mobile version there are twice less columns in a row than on a desktop version.</td>
+	</tr>
+	<tr>
+		<td><code>fancyboxOptions</code></td>
+		<td><pre><code>{}</code></pre></td>
+		<td>Options for the FancyBox plugin. More information can be found on <a href="http://fancyapps.com/fancybox/#docs">the plugin website</a>.</td>
+	</tr>
+	<tr>
+		<td><code>flexsliderOptions</code></td>
+		<td><pre><code>{
+	animation: 'slide',
+	slideshow: false,
+	slideshowSpeed: 3000,
+	animationSpeed: 400
+}</code></pre></td>
+		<td>Options for the FlexSlider plugin. More information can be found on <a href="http://www.woothemes.com/flexslider/">the plugin website</a>.</td>
+	</tr>
+	<tr>
+		<td><code>layersliderOptions</code></td>
+		<td><pre><code>{
+	skin: 'time-bright',
+	autoStart: false,
+	autoPlayVideos: false,
+	navStartStop: false,
+	navButtons: true,
+	thumbnailNavigation: 'disabled'
+}</code></pre></td>
+		<td>Options for the LayerSlider plugin. More information can be found in the <a href="layerslider/documentation/documentation.html#global_settings">plugin documentation</a>.</td>
+	</tr>
+	<tr>
+		<td><code>masonryOptions</code></td>
+		<td><pre><code>{
+	animationOptions: {duration: 400}
+}</code></pre></td>
+		<td>Options for the Masonry plugin. More information can be found on <a href="http://masonry.desandro.com/docs/options.html">plugin website</a>.</td>
+	</tr>
+	<tr>
+		<td><code>captions</code></td>
+		<td><pre><code>{
+	bricksAllButton: 'all',
+	timeDaysAgo:     'about %d days ago',
+	timeDayAgo:      'about a day ago',
+	timeHoursAgo:    'about %d hours ago',
+	timeHourAgo:     'about an hour ago',
+	timeMinutesAgo:  'about %d minutes ago',
+	timeSecondsAgo:  'about %d seconds ago',
+	timeNow:         'just now'
+}</code></pre></td>
+		<td>Labels used in the JS code in order to ease translation to other languages without having to modify the source code.</td>
+	</tr>
+</table>
+<p>All above parameters are optional, and take default value if needed. For example:</p>
+<pre><code>var timeConfig = {
+    tableMobileColsThreshold: 5,
+    flexsliderOptions:        {animation: 'fade', slideshow: false, animationSpeed: 400},
+    layersliderOptions:       {skin: 'time-bright', autoStart: true, autoPlayVideos: false, navPrevNext: false, navStartStop: true, navButtons: true, thumbnailNavigation: false}
+};
+</code></pre>
+
+<h3>Layout</h3>
+<p><em>Time</em> supports two layout types: boxed and open. To choose one of them set the class of the body element to either <code>layout-boxed</code> or <code>layout-open</code>. E.g.:</p>
+<pre><code>&lt;body class=&quot;layout-boxed&quot;&gt;
+</code></pre>
+
+<p>Maximum site width can be defined by adding the following CSS code to either the <code>&lt;head&gt;</code> section or to a separate file:</p>
+<pre><code>&lt;style&gt;
+    .layout-boxed .outer-container, .container {
+        max-width: 980px;
+    }
+&lt;/style&gt;
+</code></pre>
+
+<p>If you don't want your website to be responsive, remove the following css calling in the <code>&lt;head&gt;</code> section:</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;data/css/mobile.css&quot; media=&quot;only screen and (max-width: 767px)&quot; /&gt;
+</code></pre>
+
+<h3>Background</h3>
+<p>Due to Retina support and many other features, changing the background is slightly different than in a simple html site.</p>
+<p>To add a page background, place a <code>&lt;div&gt;</code> element with the background style inside the <code>#backgrounds</code> layer. Eg:</p>
+<pre><code>&lt;div id=&quot;backgrounds&quot;&gt;
+    &lt;div style=&quot;background-image: url(content/bg/alps.jpg);&quot; data-bg-2x=&quot;content/bg/alps@2x.jpg&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>The additional <code>data-bg-2x</code> attribute defines the Retina background.</p>
+<p>If you want the background to be striped, add <code>stripes</code> class to the background layer:</p>
+<pre><code>&lt;div class=&quot;stripes&quot; style=&quot;background-image: url(content/bg/alps.jpg);&quot; data-bg-2x=&quot;content/bg/alps@2x.jpg&quot;&gt;&lt;/div&gt;
+</code></pre>
+
+<p>If the Layer slider has slides with their own background, they will cover the main background. If not, the main background will be visible.</p>
+<h3>Logo</h3>
+<p>To place your logo change the link in the following piece of code. Remember to change the image width and height and add the Retina version.</p>
+<pre><code>&lt;!-- Logo --&gt;
+&lt;h1 class=&quot;logo vertical-align&quot; title=&quot;Time Template&quot;&gt;
+    &lt;a href=&quot;index.php&quot;&gt;&lt;img src=&quot;content/logo.png&quot; data-2x=&quot;content/logo@2x.png&quot; width=&quot;180&quot; height=&quot;36&quot; alt=&quot;Time Template&quot; /&gt;&lt;/a&gt;
+&lt;/h1&gt;
+&lt;!-- // Logo --&gt;
+</code></pre>
+
+<p>To use a text logo, replace the <code>&lt;img&gt;</code> tag with the logo text, eg:</p>
+<pre><code>&lt;h1 class=&quot;logo vertical-align&quot; title=&quot;Time Template&quot;&gt;
+    &lt;a href=&quot;index.php&quot;&gt;Time Template&lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+
+<h3>Menu</h3>
+<p>To create a menu, create an unordered HTML list. Nesting lists will create multi-leveled menu. Place the list in one of menu areas. Remember that the secondary menu doesn't support multi-leveled items, so all sub-menus will be displayed at the same level.</p>
+<p>Example menu code:</p>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Customization&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;...&quot;&gt;My other templates&lt;/a&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Fast Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Stuff&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Simple Mobile&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;...&quot;&gt;My profile&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Support&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>If you want to add the search field to your menu (only primary and mobile menu), use the following code as the next menu element:</p>
+<pre><code>&lt;li&gt;
+    &lt;form class=&quot;search&quot; action=&quot;search.php&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;search&quot; /&gt;&lt;button type=&quot;submit&quot;&gt;&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/li&gt;
+</code></pre>
+
+<h3>Layer slider</h3>
+<p><img src="res/layerslider.png" /></p>
+<p>If you want to add/modify the main slider, use the following code in the desired place:</p>
+<pre><code>&lt;div class=&quot;under-container&quot;&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;!-- Layer slider --&gt;
+        &lt;div id=&quot;layer-slider&quot; style=&quot;width: 980px; height: 300px;&quot;&gt;
+            ...
+        &lt;/div&gt;
+        &lt;!-- // Layer slider --&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- // .under-container --&gt;
+</code></pre>
+
+<p>The slider needs to have the size defined. Its width has to be the same as the page width (default is 980px).  </p>
+<p>For information on how to create slides, please refer to the <a href="layerslider/documentation/documentation.html">Layer Slider documentation</a>.</p>
+<h3>Contact form</h3>
+<p>To configure contact form, edit the <code>data/php/mail.php</code> file. Use <code>$config</code> variable to define email address for incoming contact forms.</p>
+<hr />
+<h2>Content</h2>
+<h3>Adding images</h3>
+<p>Because it's a responsive template (written in HTML5) and also Retina-ready, adding images differs a little from the usual way.</p>
+<p><img src="res/figure.png" /></p>
+<p>You need to use <code>&lt;figure&gt;</code>, <code>&lt;img&gt;</code> and <code>&lt;figcaption&gt;</code> tags to add an image. For example:</p>
+<pre><code>&lt;figure class=&quot;alignleft&quot;&gt;
+    &lt;a href=&quot;photo.jpg&quot; title=&quot;Place for credits&quot; class=&quot;fb&quot;&gt;
+        &lt;img src=&quot;photo-thumb.jpg&quot; data-2x=&quot;photo-thumb@2x.jpg&quot; width=&quot;320&quot; height=&quot;240&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption&gt;Place for credits&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+
+<p>The <code>img</code> tag has a second attribute: <code>data-2x</code> which defines the link to the image displayed on retina screens. This attribute is optional.</p>
+<p>Classes <code>alignleft</code> and <code>alignright</code> decide if the image is floated from left or right side. <code>aligncenter</code> centers the image on the page - in this case the <code>&lt;figure&gt;</code> tag needs to have a defined width (same as the image width).</p>
+<p>Caption is optional. To remove it, delete the <code>&lt;figcaption&gt;</code> tag.</p>
+<h3>Adding icons</h3>
+<p>To add a font icon (from the <a href="font-icons/demo.html">attached set</a>), use the <code>&lt;i&gt;</code> tag with a chosen class, eg:</p>
+<pre><code>&lt;i class=&quot;icon-picture&quot;&gt;&lt;/i&gt;
+</code></pre>
+
+<p>Also, you can define the colour or the size of the icon within style, eg:</p>
+<pre><code>&lt;i class=&quot;icon-picture&quot; style=&quot;color: #0ba6ff; font-size: 1.2em;&quot;&gt;&lt;/i&gt;
+</code></pre>
+
+<p>Image icons are regular images. You can find all available raster icons in the <code>data/img/icons</code> folder. An example code:</p>
+<pre><code>&lt;img src=&quot;data/img/icons/koloria/add-symbol.png&quot; data-2x=&quot;data/img/icons/koloria/add-symbol@2x.png&quot; width=&quot;16&quot; height=&quot;16&quot; alt=&quot;&quot; /&gt;
+</code></pre>
+
+<h3>Unordered list with pretty icons</h3>
+<p>Add the <code>fancy</code> class to the <code>&lt;ul&gt;</code> element and add icons to the list elements. For example:</p>
+<pre><code>&lt;ul class=&quot;fancy&quot;&gt;
+    &lt;li&gt;&lt;i class=&quot;icon-check&quot; style=&quot;color: #62af2c;&quot;&gt;&lt;/i&gt; Newspaper&lt;/li&gt;
+    &lt;li&gt;&lt;i class=&quot;icon-check&quot; style=&quot;color: #62af2c;&quot;&gt;&lt;/i&gt; Book&lt;/li&gt;
+    &lt;li&gt;&lt;i class=&quot;icon-cancel&quot; style=&quot;color: #fe0000;&quot;&gt;&lt;/i&gt; Camera&lt;/li&gt;
+    ...
+&lt;/ul&gt;
+</code></pre>
+
+<h3>Buttons</h3>
+<p>To add a simple button, use the <code>button</code> class within a hyperlink or use the <code>&lt;button&gt;</code> tag instead:</p>
+<p><img src="res/button.png" /></p>
+<pre><code>&lt;a href=&quot;...&quot; class=&quot;button&quot;&gt;Standard button&lt;/a&gt;
+</code></pre>
+
+<p>Change its size by adding <code>big</code> or <code>huge</code> class:</p>
+<p><img src="res/button_big.png" /></p>
+<pre><code>&lt;a href=&quot;...&quot; class=&quot;button big&quot;&gt;
+    &lt;span&gt;Big button&lt;/span&gt;&lt;i class=&quot;icon-upload-cloud&quot; style=&quot;color: #0e87ee;&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p>If you're using the <code>&lt;button&gt;</code> tag, to make it a link add the <code>data-href</code> attribute (as for regular links). You can also use the <code>data-target</code> attribute to define the link target (eg. <code>_blank</code> for a new window). For example:</p>
+<pre><code>&lt;button data-href=&quot;http://www.themeforest.net&quot; data-target=&quot;_blank&quot;&gt;Click me!&lt;/button&gt;
+</code></pre>
+
+<h3>Boxes / messages</h3>
+<p>To place a text in a color box, add the <code>message</code> class to a paragraph and one of the color classes: <code>blue</code>, <code>green</code>, <code>orange</code>, <code>red</code>. If you don't add any class the color will be the default color.</p>
+<p><img src="res/message_green.png" /></p>
+<pre><code>&lt;p class=&quot;message green&quot;&gt;green message&lt;/p&gt;
+</code></pre>
+
+<p><img src="res/message_red.png" /></p>
+<pre><code>&lt;p class=&quot;message red&quot; data-message-closable=&quot;true&quot;&gt;
+    &lt;i class=&quot;icon-cancel-circled&quot;&gt;&lt;/i&gt;red message
+&lt;/p&gt;
+</code></pre>
+
+<p>Optional attributes:<br />
+<code>data-message-closable</code> - defines if the message can be closed (X in the top-right corner).</p>
+<h3>Tooltips</h3>
+<p><img src="res/tooltip.png" /></p>
+<p>To add a tooltip for a specific text, add the following code before and after the text:</p>
+<pre><code>&lt;span class=&quot;tooltip&quot; data-gravity=&quot;n&quot; title=&quot;I'm a tooltip&quot;&gt;Move your mouse here&lt;/span&gt;
+</code></pre>
+
+<p>Required attributes:<br />
+<code>title</code> - text, which displays inside the tooltip.</p>
+<p>Optional attributes:<br />
+<code>data-gravity</code> - direction the tooltip points. Available values are: <code>nw</code>, <code>n</code>, <code>ne</code>, <code>w</code>, <code>e</code>, <code>sw</code>, <code>s</code>, <code>se</code>,<br />
+<code>data-fade</code> - fade effect on mouse-in. Available options: <code>true</code>, <code>false</code>.</p>
+<h3>Columns</h3>
+<p>To divide content into columns, us the example code:</p>
+<pre><code>&lt;div class=&quot;columns&quot;&gt;
+    &lt;ul&gt;
+        &lt;li class=&quot;col-1-2&quot;&gt;
+            ...
+        &lt;/li&gt;
+        &lt;li class=&quot;col-1-2&quot;&gt;
+            ...
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>There are 2 equal columns in this example (50% - 50%). The class, which defines width of the column is in this case: <code>col-1-2</code>. You can add any number of columns, with any width using <code>col-X-Y</code> classes, where <code>X</code> is a numerator, and <code>Y</code> denominator of a fraction, which defines width of a column. Remember that all columns of the block must always be an integral number (eg. 1, 2, 3). If the sum of all columns is greater than 1, then the extra columns will be wrapped to the next line.</p>
+<p>Examples:</p>
+<p><strong>25% | 25% | 50%:</strong></p>
+<pre><code>&lt;div class=&quot;columns&quot;&gt;
+    &lt;ul&gt;
+        &lt;li class=&quot;col-1-4&quot;&gt;...&lt;/li&gt;
+        &lt;li class=&quot;col-1-4&quot;&gt;...&lt;/li&gt;
+        &lt;li class=&quot;col-2-4&quot;&gt;...&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>You can replace <code>col-2-4</code> class of the last column with the <code>col-1-2</code> class, because it means the same. Choose which is more convenient for you.</p>
+<p><strong>75% | 25%:</strong></p>
+<pre><code>&lt;div class=&quot;columns&quot;&gt;
+    &lt;ul&gt;
+        &lt;li class=&quot;col-3-4&quot;&gt;...&lt;/li&gt;
+        &lt;li class=&quot;col-1-4&quot;&gt;...&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p><strong>25% | 25% | 25% | 25:</strong></p>
+<pre><code>&lt;div class=&quot;columns&quot;&gt;
+    &lt;ul&gt;
+        &lt;li class=&quot;col-1-4&quot;&gt;...&lt;/li&gt;
+        &lt;li class=&quot;col-1-4&quot;&gt;...&lt;/li&gt;    
+        &lt;li class=&quot;col-1-4&quot;&gt;...&lt;/li&gt;
+        &lt;li class=&quot;col-1-4&quot;&gt;...&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>You can find more examples it the <code>typography.html</code> or other files.</p>
+<p>On the mobile version, all columns are presented one below the other (always full-width). If the number of columns is greater or equal to the value of the <code>columnsMobileColsThreshold</code> parameter, then the number of columns on the mobile version will be reduced by half and only on a very narrow display will it be reduced to one column. This works only for a column set of type 1/X (eg. 6x 1/3, 2x 1/2).</p>
+<h3>Price tables</h3>
+<p><img src="res/price_tables.png" /></p>
+<p>Price tables are enhanced columns. To place a price table, use a code of columns and add the <code>.price-table</code> class to the <code>div</code> of a column. For example:</p>
+<pre><code>&lt;div class=&quot;columns price-table&quot;&gt;
+    &lt;ul&gt;
+        &lt;li class=&quot;col-1-5&quot;&gt;...&lt;/li&gt;
+        ...
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Inside a column you can place the following elements: <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>p</code>, <code>figure</code> and <code>div</code>. If you want to place a list (or another not mentioned above element), place it inside a <code>div</code> element. You can find more examples in the <code>price-tables.html</code> file.</p>
+<h3>Tabs</h3>
+<p><img src="res/tabs.png" /></p>
+<p>Use the following code to create tabs:</p>
+<pre><code>&lt;div class=&quot;tabs&quot;&gt;
+    &lt;div title=&quot;Tab one&quot;&gt;
+        &lt;p&gt;Aenean commodo ligula eget dolor....&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div title=&quot;Tab two&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div title=&quot;Tab three&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Required attribute:<br />
+<code>title</code> - tab title.</p>
+<p>First tab is active by default. You can change it by adding <code>active</code> class to a different <code>&lt;div&gt;</code> element.</p>
+<h3>Super tabs</h3>
+<p><img src="res/super_tabs.png" /></p>
+<p>Use the following code to create tabs:</p>
+<pre><code>&lt;div class=&quot;super-tabs&quot; data-super-tabs-ordered=&quot;true&quot;&gt;
+    &lt;div title=&quot;I'm SuperTab nr one&quot; data-super-tabs-description=&quot;And some short description below&quot;&gt;
+        &lt;a href=&quot;color-schemes.php&quot;&gt;&lt;img src=&quot;content/misc/tab-1.png&quot; data-2x=&quot;content/misc/tab-1@2x.png&quot; width=&quot;635&quot; height=&quot;270&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div title=&quot;Featured content tabs&quot; data-super-tabs-description=&quot;are perfect for presenting key content to your clients&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div title=&quot;Important feature&quot; data-super-tabs-description=&quot;You can remove the description if you want&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Unlike regular tabs, Super Tabs are for images only (optionally with hiperlink).</p>
+<p>Required attribute:<br />
+<code>title</code> - tab title.</p>
+<p>Optional attribute:<br />
+<code>data-super-tabs-ordered</code> - It's for numbering (or not) tabs. Available options: <code>true</code>, <code>false</code>,<br />
+<code>data-super-tabs-description</code> - Additional description under tab's title.</p>
+<p>First tab is active by default. You can change it by adding <code>active</code> class to a different <code>&lt;div&gt;</code> element.</p>
+<h3>Toggles</h3>
+<p><img src="res/toggles.png" /></p>
+<p>Use the following code to create toggles:</p>
+<pre><code>&lt;div class=&quot;toggles&quot;&gt;
+    &lt;div title=&quot;Toggle section one&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;active&quot; title=&quot;Toggle this&quot;&gt;
+        &lt;p&gt;Cum sociis natoque penatibus...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div title=&quot;Example three&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div title=&quot;About support&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Required attributes:<br />
+<code>title</code> - toggle title.</p>
+<p>Optional attributes:<br />
+<code>data-toggles-singular</code> - defines whether at one time there can only be one toggle open. Available options: <code>true</code>, <code>false</code>.</p>
+<p>First toggle is active by default. You can change it by adding <code>active</code> class to a different <code>&lt;div&gt;</code> element.</p>
+<h3>Social media buttons</h3>
+<p>There are two types of social media buttons available: vertical and horizontal.</p>
+<p><img src="res/social_media_buttons_vertical.png" /></p>
+<pre><code>&lt;div class=&quot;social-buttons&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;div class=&quot;fb-like&quot; data-href=&quot;...&quot; data-send=&quot;false&quot; data-layout=&quot;box_count&quot; data-show-faces=&quot;false&quot;&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;twitter-share-button&quot; href=&quot;https://twitter.com/share&quot; data-url=&quot;...&quot; data-text=&quot;...&quot; data-count=&quot;vertical&quot;&gt;Tweet&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;div class=&quot;g-plusone&quot; data-href=&quot;...&quot; data-size=&quot;tall&quot;&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;script class=&quot;inshare&quot; type=&quot;IN/Share&quot; data-url=&quot;...&quot; data-counter=&quot;top&quot;&gt;&lt;/script&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a data-pin-config=&quot;above&quot; href=&quot;http://pinterest.com/pin/create/button/?url=...&amp;amp;media=...&amp;amp;description=...&quot; data-pin-do=&quot;buttonPin&quot;&gt;&lt;img src=&quot;http://assets.pinterest.com/images/pidgets/pin_it_button.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Fill in the attributes:<br />
+<code>data-url</code>, <code>data-href</code> - URL of a page which the button refers to,<br />
+<code>data-text</code> - suggested tweet message.</p>
+<p>Pinterest button requires defining parameters in the <code>href</code> attribute. Remember to code the data properly for links (E.g.using the <code>urlencode</code> PHP function).</p>
+<p>The other variant are horizontal social media buttons.</p>
+<p><img src="res/social_media_buttons_horizontal.png" /></p>
+<pre><code>&lt;ul class=&quot;meta social&quot;&gt;
+    &lt;li&gt;&lt;div class=&quot;fb-like&quot; data-href=&quot;...&quot; data-send=&quot;false&quot; data-layout=&quot;button_count&quot; data-show-faces=&quot;false&quot;&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;twitter-share-button&quot; href=&quot;https://twitter.com/share&quot; data-url=&quot;...&quot; data-text=&quot;...&quot; data-count=&quot;horizontal&quot;&gt;Tweet&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;div class=&quot;g-plusone&quot; data-href=&quot;...&quot; data-size=&quot;medium&quot; data-annotation=&quot;bubble&quot;&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;script class=&quot;inshare&quot; type=&quot;IN/Share&quot; data-url=&quot;...&quot; data-counter=&quot;right&quot; data-showzero=&quot;true&quot;&gt;&lt;/script&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a data-pin-config=&quot;beside&quot; href=&quot;http://pinterest.com/pin/create/button/?url=...&amp;amp;media=...&amp;amp;description=...&quot; data-pin-do=&quot;buttonPin&quot;&gt;&lt;img src=&quot;http://assets.pinterest.com/images/pidgets/pin_it_button.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h3>Embedding a video</h3>
+<p>If you want to embed a video using the embedding code supplied by the external service, enclose it with a following tag:</p>
+<pre><code>&lt;div class=&quot;embed&quot;&gt;...&lt;/div&gt;
+</code></pre>
+
+<p>For example:</p>
+<pre><code>&lt;div class=&quot;embed&quot;&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/HEEUJNYZps0?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>If you want to place a self hosted video, use the following code:</p>
+<pre><code>&lt;div class=&quot;embed&quot;&gt;
+    &lt;video src=&quot;http://download.blender.org/peach/trailer/trailer_1080p.ogg&quot; poster=&quot;content/media/video-poster.jpg&quot; controls=&quot;controls&quot; preload=&quot;none&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Optional attributes:<br />
+<code>src</code> - defines path to the video file,<br />
+<code>poster</code> - defines path to an image, which is displayed before playing the video.</p>
+<p>The same applies to audio:</p>
+<pre><code>&lt;div class=&quot;embed&quot;&gt;
+    &lt;audio src=&quot;content/media/audio.mp3&quot; controls=&quot;controls&quot; preload=&quot;none&quot;&gt;&lt;/audio&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Twitter widget</h3>
+<p>If you want to place a Twitter timeline on a page, use the following code:</p>
+<pre><code>&lt;div class=&quot;twitter&quot; data-twitter-username=&quot;KUBASTOcom&quot;&gt;&lt;/div&gt;
+</code></pre>
+
+<p>Fill in the attributes:<br />
+<code>data-twitter-username</code> - your username,<br />
+<code>data-twitter-include-retweets</code> - include or not retweets. Available options: <code>true</code>, <code>false</code> (default: <code>true</code>),<br />
+<code>data-twitter-exclude-replies</code> - include or not replies. Available options: <code>true</code>, <code>false</code> (default: <code>false</code>),<br />
+<code>data-twitter-count</code> - number of tweets (default: <code>3</code>),<br />
+<code>data-twitter-orientation</code> - layout of tweets list. Available options: <code>vertical</code>, <code>horizontal</code> (columns), <code>scrollable</code>.</p>
+<p>Remember to configure Twitter API settings in the <code>data/php/twitter.php</code> file. Because of Twitter API 1.1 new rules, you need to create a Twitter app for the Twitter widget to work correctly. You can read how to do that in <a href="https://dev.twitter.com/docs/faq#7447">Twitter FAQ</a>.</p>
+<h3>Flickr widget</h3>
+<p>If you want to place images from flickr.com service, use the following code:</p>
+<pre><code>&lt;div class=&quot;flickr&quot; data-flickr-id=&quot;52617155@N08&quot; data-flickr-count=&quot;9&quot;&gt;&lt;/div&gt;
+</code></pre>
+
+<p>Fill in the attributes:<br />
+<code>data-flickr-id</code> - your Flickr ID. If you don’t know your Flickr ID, you can check it on the <a href="http://www.idgettr.com">idgettr.com</a>,<br />
+<code>data-flickr-count</code> - number of pictures to display.</p>
+<hr />
+<h2>FAQ</h2>
+<h3>How to hide / show a section on a specific version of the site (e.g. mobile)?</h3>
+<p>Use one of the built-in CSS classes to manage elements displaying on different site versions (desktop or mobile):<br />
+<code>mobile-only</code> or <code>desktop-only</code>.</p>
+<p>For example, if you want to display an image on a desktop version only:</p>
+<pre><code>&lt;figure class=&quot;desktop-only&quot;&gt;
+    &lt;a href=&quot;content/misc/boy.jpg&quot; class=&quot;inset-border fb zoom-hover&quot; data-zoom-hover-icon=&quot;icon-search&quot;&gt;&lt;img src=&quot;content/misc/boy-220.jpg&quot; data-2x=&quot;content/misc/boy-220@2x.jpg&quot; width=&quot;368&quot; height=&quot;240&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;/figure&gt;
+</code></pre>
+
+<hr />
+<h2>Graphic files</h2>
+<p>There are not many graphic files used to built this template. If you would like to modify any of them, there is the <code>psd</code> folder with source files included.</p>
+<hr />
+<h2>Extra informations</h2>
+<h3>Content size</h3>
+<p>If you decide to use the default site width (980 px), these are sizes of content areas dependent of number of sidebars and columns on both - desktop and mobile versions. It's handy if you want to prepare images, which will fit for all cases.</p>
+<p>For example, if you want to know the best size for image to use on a page with no sidebars, and 3 columns - pick the highest number from the column 3, except the 748, because you want to use alternative column layout for mobile. So it's 364px. Image will never be bigger on any browser's size, so it's the biggest size you need.</p>
+<table>
+	<tr>
+		<th>Version \ Columns</th>
+		<th>1</th>
+		<th>2</th>
+		<th>3</th>
+		<th>4</th>
+		<th>5</th>
+		<th>6</th>
+	</tr>
+	<tr>
+		<th>Desktop (full-width)</th>
+		<td>940px</td>
+		<td>460px</td>
+		<td>300px</td>
+		<td>220px</td>
+		<td>172px</td>
+		<td>140px</td>
+	</tr>
+	<tr>
+		<th>Desktop (1&nbsp;sidebar)</th>
+		<td>700px</td>
+		<td>340px</td>
+		<td>220px</td>
+		<td>160px</td>
+		<td>124px</td>
+		<td>100px</td>
+	</tr>
+	<tr>
+		<th>Desktop (2&nbsp;sidebars)</th>
+		<td>460px</td>
+		<td>220px</td>
+		<td>140px</td>
+		<td>100px</td>
+		<td>76px</td>
+		<td>60px</td>
+	</tr>
+	<tr>
+		<th>Mobile (alternative)</th>
+		<td>748px</td>
+		<td>748px</td>
+		<td>364px</td>
+		<td>364px</td>
+		<td>236px</td>
+		<td>236px</td>
+	</tr>
+	<tr>
+		<th>Mobile</th>
+		<td>748px</td>
+		<td>748px</td>
+		<td>748px</td>
+		<td>748px</td>
+		<td>748px</td>
+		<td>748px</td>
+	</tr>
+</table>
+<h3>Useful CSS classes</h3>
+<p>There are a few CSS classes to use anywhere in the template:</p>
+<p><strong><code>color-*</code></strong>, <strong><code>background-*</code></strong> - a handy set of classes with colors and background colors:</p>
+<p><img src="res/colors.png" /></p>
+<p><strong><code>clear</code></strong> - prevents floating of the element with this class; equivalent to this code:</p>
+<pre><code>&lt;div style=&quot;clear: both;&quot;&gt;...&lt;/div&gt;
+</code></pre>
+
+<p><strong><code>clear-fix</code></strong> - makes that any floating element inside a block element with this class will not stick out of it. So:</p>
+<pre><code>&lt;div id=&quot;some-block&quot; class=&quot;clear-fix&quot;&gt;
+    ...
+&lt;/div&gt;
+</code></pre>
+
+<p>is the same as:</p>
+<pre><code>&lt;div id=&quot;some-block&quot;&gt;
+    ...
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p><strong><code>alpha</code></strong> - any element with this class has a <code>float: left;</code> style, so it's floated from the right.<br />
+<strong><code>beta</code></strong> - any element with this class has a <code>float: right;</code> style, so it's floated from the left.</p>
+<p>On mobile versions, these classes are ignored, and elements display typically (one below another).</p>
+<p>For example:</p>
+<pre><code>&lt;div class=&quot;alpha&quot;&gt;Left column&lt;/div&gt;
+&lt;div class=&quot;beta&quot;&gt;Right column&lt;/div&gt;
+</code></pre>
+
+<p>In the example above, on desktop versions, these elements will appear one next to another. On mobile, one below another.</p>
+<p><strong><code>alignleft</code></strong>, <strong><code>alignright</code></strong>, <strong><code>aligncenter</code></strong> - forces right or left floating. So:</p>
+<pre><code>&lt;div class=&quot;alignleft&quot;&gt;...&lt;/div&gt;
+</code></pre>
+
+<p>is the same as:</p>
+<pre><code>&lt;div style=&quot;float: left;&quot;&gt;...&lt;/div&gt;
+</code></pre>
+
+<p>On the mobile version these classes are no longer valid (similarly the <code>alpha</code>/<code>beta</code> classes), so for instance an image with this class is no longer floated. To prevent this add the <code>fixed</code> class on the mobile version, eg:</p>
+<pre><code>&lt;div class=&quot;alignleft fixed&quot;&gt;...&lt;/div&gt;
+</code></pre>
+
+<p><strong><code>full-width</code></strong> - element with 100% width.</p>
+<p><strong><code>full-width-mobile</code></strong> - as above, but it has effect only on the mobile version.</p>
+<p><strong><code>horizontal-align</code></strong> - centers the elements horizontally. As opposed to <code>aligncenter</code>, this class is supported by  JavaScript and is applicable when there is a block element without a defined size.</p>
+<p><strong><code>vertical-align</code></strong> - suppprted by JavaScript, this class centers the element vertically (relative to the superior element).</p>
+<p><strong><code>table-vertical-align</code></strong> - centers the element vertically with the use of the following attributes: <code>display: table</code> and <code>display: table-cell</code>, eg:</p>
+<pre><code>&lt;div class=&quot;table-vertical-align&quot;&gt;
+    &lt;div&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p><strong><code>text-center</code></strong> - centers text.</p>
+<p><strong><code>no-js</code></strong> - is the <code>&lt;html&gt;</code> element class set automatically in the lack of JavaScript support.</p>
+<p><strong><code>js</code></strong> - as above, but when JS is supported.</p>
+<p><strong><code>ie</code></strong>, <strong><code>no-ie</code></strong>, <strong><code>ie9</code></strong>, <strong><code>lt-ie9</code></strong> - are <code>&lt;html&gt;</code> element classes set automatically in case the browser is (in the following order): Internet Explorer, other than IE, IE9, lower than IE9. Exception: IE10 will be set as <code>no-ie</code> because in this version conditional tags are not supported.</p>
+<hr />
+<h2>External resources</h2>
+<p><a href="http://jquery.com/">jQuery</a><br />
+<a href="http://jqueryui.com/">jQuery UI</a><br />
+<a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing Plugin</a><br />
+<a href="http://mediaelementjs.com/">MediaElement.js</a><br />
+<a href="http://fancybox.net">Fancybox</a><br />
+<a href="http://www.woothemes.com/flexslider/">FlexSlider</a><br />
+<a href="http://codecanyon.net/item/layerslider-the-parallax-effect-slider/922100">LayerSlider</a><br />
+<a href="http://masonry.desandro.com">masonry</a><br />
+<a href="http://onehackoranother.com/projects/jquery/tipsy">tipsy</a><br />
+<a href="http://desandro.github.com/imagesloaded/">imagesLoaded</a><br />
+<a href="http://oauth.googlecode.com/svn/code/php">oauth</a><br />
+<a href="http://selectivizr.com/">Selectivizr</a><br />
+<a href="http://www.entypo.com/">Entypo</a> Font<br />
+<a href="https://github.com/fontello/brandico.font">Brandico</a> Font<br />
+<a href="http://graphicrating.com">Koloria Icons Pack</a> by Andy Gongea<br />
+<a href="http://pc.de/icons/">pc.de Essen Icon Pack</a><br />
+<a href="http://pc.de/ico/">PC 100 Icon Pack</a><br />
+<a href="http://obox-design.com/view_item.cfm/title/free-travel-icon-pack">Travel icon pack</a><br />
+<a href="http://www.gosquared.com/">Flag Icons</a> by GoSquared<br />
+<a href="http://subtlepatterns.com/">Subtle Patterns</a>  </p>
+<hr />
+<h2>Changelog</h2>
+<p><strong>Time 1.2:</strong></p>
+<ul>
+<li>implemented new rules of Twitter API 1.1 for Twitter widget</li>
+<li>added include-retweets and exclude-replies options for Twittera widget</li>
+<li>added buffering for received tweets to make it work faster</li>
+<li>improved Retina images handling in LayerSlider</li>
+<li>updated jQuery to 2.0 version</li>
+<li>updated LayerSlider to 4.5.5 version</li>
+<li>small changes in the template documentation</li>
+</ul>
+<p><strong>Time 1.1:</strong></p>
+<ul>
+<li>added price tables</li>
+<li>added log in module</li>
+<li>added set of classes: .background-(name), simmilar to .color-(name)</li>
+<li>slimmed down frame of FancyBox images</li>
+<li>fixed Like button wrong behavior after clicking</li>
+<li>other minor fixes</li>
+</ul>
+<p><strong>Time 1.0:</strong></p>
+<ul>
+<li>first release</li>
+</ul>
+<hr />
+<h2>Thank you</h2>
+<p>for purchasing this template. If you have any further questions don’t hesitate to ask. The best way to contact me is the contact form on <a href="http://themeforest.net/user/kubasto">my profile page</a>.<br />
+Kuba Sto</p>
+<p><script type="text/javascript" src="res/jquery.min.js"></script>
+<script type="text/javascript" src="res/doc.js"></script></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

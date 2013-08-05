@@ -1,0 +1,143 @@
+/**
+ * @package Time_Template
+ * @since Time 1.0
+ */
+ 
+/* Background
+----------------------------------------------------------------------------- */
+.ls-time-dark .ls-nav-prev,
+.ls-time-dark .ls-nav-next,
+.ls-time-dark .ls-nav-start,
+.ls-time-dark .ls-nav-stop,
+.ls-time-dark .ls-bottom-slidebuttons a,
+.ls-time-dark .ls-playvideo {
+	background-image: url(skin.png);	
+	background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.ls-time-dark .ls-nav-prev,
+	.ls-time-dark .ls-nav-next,
+	.ls-time-dark .ls-nav-start,
+	.ls-time-dark .ls-nav-stop,
+	.ls-time-dark .ls-bottom-slidebuttons a,
+	.ls-time-dark .ls-playvideo {
+		background-image: url(skin@2x.png);
+		background-size: 86px 242px;
+	}
+}
+
+/* Previous, next
+----------------------------------------------------------------------------- */
+.ls-time-dark .ls-nav-prev,
+.ls-time-dark .ls-nav-next {
+	position: absolute;
+	margin: -33px 10px 0 10px;	
+	top: 50%;
+	width: 43px;
+	height: 66px;
+	z-index: 10000;
+}
+.ls-time-dark .ls-nav-prev {
+	background-position: 0 0;
+	left: -63px;
+}
+.ls-time-dark .ls-nav-prev:hover {
+	background-position: 0 -66px;
+}
+.ls-time-dark .ls-nav-next {
+	background-position: -43px 0;
+	right: -63px;
+}
+.ls-time-dark .ls-nav-next:hover {
+	background-position: -43px -66px;
+}
+
+/* Start, stop
+----------------------------------------------------------------------------- */
+.ls-time-dark .ls-nav-start,
+.ls-time-dark .ls-nav-stop {
+	display: inline-block;
+	top: -30px;
+	width: 25px;
+	height: 20px;
+}
+.ls-time-dark .ls-nav-start {
+	background-position: 0 -152px;
+}
+.ls-time-dark .ls-nav-start:hover,
+.ls-time-dark .ls-nav-start-active {
+	background-position: 0 -172px;
+}
+.ls-time-dark .ls-nav-stop {
+	background-position: -25px -152px;
+}
+.ls-time-dark .ls-nav-stop:hover,
+.ls-time-dark .ls-nav-stop-active {
+	background-position: -25px -172px;
+}
+
+/* Sides
+----------------------------------------------------------------------------- */
+.ls-time-dark .ls-nav-sides {
+	display: none;
+}
+
+/* Slide buttons
+----------------------------------------------------------------------------- */
+.ls-time-dark .ls-bottom-slidebuttons,
+.ls-time-dark .ls-bottom-slidebuttons a {
+	display: inline-block;
+	height: 20px;
+}
+.ls-time-dark .ls-bottom-slidebuttons {
+	top: -30px;
+}
+.ls-time-dark .ls-bottom-slidebuttons a {
+	background-position: 0 -132px;
+	width: 25px;
+}
+.ls-time-dark .ls-bottom-slidebuttons a.ls-nav-active,
+.ls-time-dark .ls-bottom-slidebuttons a:hover {
+	background-position: -25px -132px;
+}
+
+/* Thumbnail
+----------------------------------------------------------------------------- */
+.ls-time-dark .ls-thumbnail-hover {
+	bottom: 30px;
+	padding: 2px;
+	margin-left: -3px;
+}
+.ls-time-dark .ls-thumbnail-hover-bg,
+.ls-time-dark .ls-nothumb {
+	background: #fff;
+}
+.ls-time-dark .ls-thumbnail-hover span {
+	border: 5px solid #fff;
+	margin-left: -5px;
+}
+.ls-time-dark .ls-thumbnail {
+	top: 10px;
+}
+.ls-time-dark .ls-thumbnail-inner {
+	padding: 2px;
+	margin-left: -2px;
+	background: #fff;
+}
+.ls-time-dark .ls-thumbnail-slide a {
+	margin-right: 2px;
+}
+
+/* Play video
+----------------------------------------------------------------------------- */
+.ls-time-dark .ls-playvideo {
+	background-position: 0 -192px;
+	margin-left: -19px;
+	margin-top: -22px;
+	width: 38px;
+	height: 44px;
+}
+.ls-time-dark .ls-playvideo:hover,
+.ls-time-dark .ls-vpcontainer:hover .ls-playvideo {
+	background-position: -38px -192px;
+}

@@ -1,0 +1,50 @@
+/**
+ * @package Time_Template
+ * @since Time 1.0
+ */
+
+/* Leading color
+----------------------------------------------------------------------------- */
+a,
+a.alt:hover,
+.alt a:hover,
+#bottom a.alt:hover,
+#bottom .alt a:hover,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+input[type="button"].active, button.active, .button.active,
+.color,
+.super-tabs > div > .nav h2 span,
+.toggles > div > h3:hover > i,
+.logo,
+nav a:hover,
+#bottom nav a:hover,
+nav.secondary .current a,
+nav.lang .current a
+{
+	color: #ef0000;
+}
+
+mark,
+.slider .control-nav li a:hover,
+.slider .control-nav li a.active,
+#top:before,
+#top > .before,
+nav.primary .current > a,
+nav.mobile a:hover,
+nav.mobile .current > a,
+.mejs-controls .mejs-time-rail .mejs-time-loaded,
+.mejs-controls .mejs-time-rail .mejs-time-current
+{
+	background-color: #ef0000;
+}
+
+.zoom-hover > .zoom-hover-overlay
+{
+	background-color: rgba(239, 0, 0, 0.75);
+}
+
+blockquote.bar,
+#bottom .outer-container
+{
+	border-color: #ef0000;
+}
